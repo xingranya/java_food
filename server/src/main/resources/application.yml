@@ -2,9 +2,15 @@
 server.port: 9100
 server.servlet.context-path: /api
 
-BASE_LOCATION: D:\aliyun_workspace\java_food
+BASE_LOCATION: /Users/vincent/Downloads/java_food
 DB_NAME: java_food
 
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/java_food?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: xingran8
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 File:
   uploadPath: ${BASE_LOCATION}\server\upload
